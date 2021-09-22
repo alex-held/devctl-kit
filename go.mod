@@ -1,5 +1,10 @@
-module github.com/alex-held/devctl-plugin
+module github.com/alex-held/devctl-kit
 
 go 1.16
 
-require github.com/stretchr/testify v1.7.0
+require (
+	github.com/franela/goblin v0.0.0-20210519012713-85d372ac71e2 // indirect
+	github.com/onsi/ginkgo v1.16.4 // indirect
+	github.com/onsi/gomega v1.16.0 // indirect
+	github.com/stretchr/testify v1.7.0
+)

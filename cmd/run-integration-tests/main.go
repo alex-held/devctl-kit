@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/alex-held/devctl-plugin/pkg/log"
+	"github.com/alex-held/devctl-kit/pkg/log"
 )
 
 func usage() {

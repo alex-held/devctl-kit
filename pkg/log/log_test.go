@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/alex-held/devctl-plugin/pkg/log"
+	"github.com/alex-held/devctl-kit/pkg/log"
 )
 
 func TestLevel_Colorize(t *testing.T) {
