@@ -44,6 +44,16 @@ func NewPaths(base string) Paths {
 	}
 }
 
+func (p Paths) Config(paths ...string) string { return p.join(constants.ConfigDir, paths...) }
+func (p Paths) SDK(paths ...string) string    { return p.join(constants.SDKsDir, paths...) }
+func (p Paths) Store(paths ...string) string  { return p.join(constants.StoreDir, paths...) }
+func (p Paths) Bin(paths ...string) string    { return p.join(constants.BinDir, paths...) }
+
+func (p Paths) Subdir(paths ...string) string { return p.join("", paths...) }
+func (p Paths) join(dir string, paths ...string) string {
+	return filepath.Join(p.base, dir, filepath.Join(paths...))
+}
+
 // Base returns the devctl base directory
 func (p Paths) Base() string { return p.base }
 
