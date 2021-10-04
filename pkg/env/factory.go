@@ -12,7 +12,7 @@ import (
 
 	"github.com/alex-held/devctl-kit/pkg/cli"
 	"github.com/alex-held/devctl-kit/pkg/cli/util"
-	"github.com/alex-held/devctl/pkg/validation"
+	"github.com/alex-held/devctl-kit/pkg/validation"
 )
 
 type factory struct {
